@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/officeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/office">
+
+    <ImageView
+        android:id="@+id/ivReginusOffice"
+        android:layout_width="@dimen/_468dp"
+        android:layout_height="@dimen/_412dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:src="@drawable/reginusder"
+        android:translationY="@dimen/_90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOffice"
+        android:layout_width="@dimen/_429dp"
+        android:layout_height="@dimen/_79dp"
+        android:elevation="@dimen/_3dp"
+        android:text=""
+        android:textSize="@dimen/text_size_20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
+
+
+    <ImageView
+        android:id="@+id/cuadrodialogoOffice"
+        android:layout_width="@dimen/_565dp"
+        android:layout_height="@dimen/_109dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:elevation="@dimen/_2dp"
+        android:src="@drawable/cuadrodialogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/cartaOffice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/_3dp"
+        android:src="@drawable/carta"
+        android:translationY="@dimen/_40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextCarta"
+        android:layout_width="@dimen/_164dp"
+        android:layout_height="@dimen/_53dp"
+        android:elevation="@dimen/_5dp"
+        android:rotation="-4"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOffice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cartaOffice" />
+
+    <ImageButton
+        android:id="@+id/btnLeftOffice"
+        android:layout_width="@dimen/_222dp"
+        android:layout_height="@dimen/_102dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/boton_clase"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <ImageButton
+        android:id="@+id/btnRightOffice"
+        android:layout_width="@dimen/_222dp"
+        android:layout_height="@dimen/_102dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/boton_recibidor"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="@dimen/_48dp"
+        android:layout_height="@dimen/_48dp"
+        android:src="@drawable/play"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="@dimen/_48dp"
+        android:layout_height="@dimen/_48dp"
+        android:src="@drawable/pause"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/playButton"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!-- OFICINA -->

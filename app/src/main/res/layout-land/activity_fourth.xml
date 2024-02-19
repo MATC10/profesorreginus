@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/classLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clase1">
+
+    <ImageView
+        android:id="@+id/ivPharynha"
+        android:layout_width="@dimen/_432dp"
+        android:layout_height="@dimen/_400dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:src="@drawable/pharynha"
+        android:translationY="@dimen/_10dp"
+        tools:layout_editor_absoluteX="90dp" />
+
+    <ImageView
+        android:id="@+id/ivReginus"
+        android:layout_width="@dimen/_432dp"
+        android:layout_height="@dimen/_400dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:src="@drawable/reginus"
+        android:translationY="@dimen/_10dp"
+        tools:layout_editor_absoluteX="90dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="@dimen/_429dp"
+        android:layout_height="@dimen/_79dp"
+        android:elevation="@dimen/_3dp"
+        android:text=""
+        android:textSize="@dimen/text_size_20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
+
+
+    <ImageView
+        android:id="@+id/cuadrodialogo"
+        android:layout_width="@dimen/_565dp"
+        android:layout_height="@dimen/_109dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:elevation="@dimen/_2dp"
+        android:src="@drawable/cuadrodialogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+    <ImageButton
+        android:id="@+id/btnLeft"
+        android:layout_width="@dimen/_222dp"
+        android:layout_height="@dimen/_102dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/boton_oficina"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <ImageButton
+        android:id="@+id/btnLeftRecibidor"
+        android:layout_width="@dimen/_222dp"
+        android:layout_height="@dimen/_102dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/boton_recibidor"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="@dimen/_48dp"
+        android:layout_height="@dimen/_48dp"
+        android:src="@drawable/play"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="@dimen/_48dp"
+        android:layout_height="@dimen/_48dp"
+        android:src="@drawable/pause"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/playButton"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
